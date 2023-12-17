@@ -1,7 +1,7 @@
 .navbar{
   height: 80px;
   .wrapper{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -10,6 +10,7 @@
 
     span{
       font-weight: bold;
+      font-size: 30px;
     }
 
     .social{
@@ -21,17 +22,5 @@
         height: 25px;
       }
     }
-  }
-}
-
-.course{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .box{
-    width: 200px;
-    height: 200px;
-    background-color: white;
   }
 }
