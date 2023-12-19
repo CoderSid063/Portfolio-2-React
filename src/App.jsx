@@ -9,11 +9,8 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">Pareleal</section>
-      <section>Service</section>
+      <section id="Services">Services</section>
       <section id="Portfolio">Portfolio1</section>
-      <section>POrt2</section>
-      <section>Port3</section>
       <section id="Contact">Contact</section>
       {/* <Test /> */}
     </div>

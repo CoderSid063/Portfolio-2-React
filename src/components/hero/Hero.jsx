@@ -29,11 +29,11 @@ const sliderVariants = {
     x: 0,
   },
   animate: {
-    x: "-220%",
+    x: "-200%",
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
-      duration: 15,
+      duration: 30,
     },
   },
 };
@@ -70,7 +70,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Web Developer Frontend
+        Web Developer
       </motion.div>
       <div className="imageContainer">
         <img id="personal" src="/hero1.png" alt="" />
