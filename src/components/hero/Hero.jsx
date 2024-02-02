@@ -70,16 +70,16 @@ const Hero = () => {
           /> */}
         </motion.div>
       </div>
-      {/* <motion.div
+      <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         Web Developer
-      </motion.div> */}
+      </motion.div>
       <div className="imageContainer">
-        <img className="personal" src="/hero1.png" alt="" />
+        <img src="/hero1.png" alt="" />
       </div>
     </div>
   );

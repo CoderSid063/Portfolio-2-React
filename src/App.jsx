@@ -19,7 +19,6 @@ const App = () => {
       <section id="Contact">
         <Contact />
       </section>
-      {/* <Test /> */}
     </div>
   );
 };
