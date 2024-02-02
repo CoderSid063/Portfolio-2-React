@@ -1,3 +1,4 @@
+@import "../../app.scss";
 .hero{
   height: calc(100vh - 80px);
   background: linear-gradient(180deg ,#0c0c1d , #111132);
@@ -9,11 +10,20 @@
   }
 
   .textContainer{
-    height: 90%;
+    width: 50%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
+    // background: red;
+    @include mobile{
+      width: 100%;
+    height: 50%;
+    align-items: center;
+    text-align: center;
+    }
+    
 
     h2{
       font-style: 30px;
@@ -22,7 +32,10 @@
     }
 
     h1{
-      font-size: 85px;
+      font-size: 80px;
+      @include mobile{
+        font-size: 35px;
+      }
     }
 
     .buttons{
@@ -37,6 +50,13 @@
         font-size: medium;
         cursor: pointer;
       }
+
+      .btn{
+        color: black;
+        background-color: white;
+      }
+      
+    
     }
     img{
       width: 50px;
@@ -45,29 +65,47 @@
 
 
   .imageContainer{
-    height: 600px;
-    width: 500px;
+    height: 560px;
+    width: 570px;
     position: absolute;
-    top: 50px;
-    right: 30px;
-    margin-top: 20px;
+    top: unset;
+    bottom: 0;
+    right: 100px;
+    padding-right: 30px;
     overflow: hidden;
-  }
-  
-  .personal{
-    height: 620px;
-    width: 600px;
-    margin-top: -50px;
-     padding-right: 100px;
+    // background-color: red;
+
+    @include mobile{
+      height: 40%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+      left: 20px;
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include mobile{
+        height: 108%;
+        width: 75%;
+        top: unset;
+        bottom: 0;
+      }
+    }
+    
   }
 
   .slidingTextContainer{
     position: absolute;
-    font-size: 30vh;
+    font-size: 26vh;
     bottom:-38px;
     white-space: nowrap;
     color: #ffffff09;
-    width: 50%;
+    width: 45%;
     font-weight: bold;
+    // background-color: red;
   }
 }
