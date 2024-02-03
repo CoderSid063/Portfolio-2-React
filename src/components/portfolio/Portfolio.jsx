@@ -5,27 +5,31 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/13441993/pexels-photo-13441993.jpeg",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad id molestiae cum praesentium expedita, a alias doloribus quae earum suscipit fugiat",
+    title: "Nextjs Project",
+    link: "https://nextjswebapp1.netlify.app/",
+    img: "/HomePage.png",
+    desc: "This is a Blog WebApp created using Next.js14",
   },
   {
     id: 2,
     title: "Amazon Clone",
-    img: "https://images.pexels.com/photos/12820603/pexels-photo-12820603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad id molestiae cum praesentium expedita, a alias doloribus quae earum suscipit fugiat",
+    link: "https://codersid063.github.io/Amazon-Clone-Frontend-Javascript/",
+    img: "/AmazonClone.png",
+    desc: "This is a Clone webApp of Amazone.in with verious functionality",
   },
   {
     id: 3,
-    title: "Movie App",
+    title: "MovieLand",
+    link: "https://moviex-land.netlify.app/",
     img: "https://images.pexels.com/photos/1200450/pexels-photo-1200450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad id molestiae cum praesentium expedita, a alias doloribus quae earum suscipit fugiat",
+    desc: "This WebApp show the movies according to your search and all the data catch by API call",
   },
   {
     id: 4,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/16931543/pexels-photo-16931543/free-photo-of-roses-on-an-open-book-on-the-windowsill.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad id molestiae cum praesentium expedita, a alias doloribus quae earum suscipit fugiat",
+    title: "SocialHub",
+    link: "https://social-hub-post.netlify.app/",
+    img: "/SocialHub.png",
+    desc: "Social Hub is a dynamic and interactive web application that brings together a collection of 100 random posts sourced from a dummyJSON API and also empowers users to creating their own posts. ",
   },
 ];
 
@@ -49,7 +53,16 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.link}>
+              <button>See Demo</button>
+            </a>
+            <a
+              href="https://github.com/CoderSid063?tab=repositories"
+              className="gitbtn"
+            >
+              <img src="/git.png" alt="" />
+              <p>Get Code</p>
+            </a>
           </motion.div>
         </div>
       </div>
