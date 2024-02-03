@@ -7,6 +7,7 @@ const items = [
     id: 1,
     title: "Nextjs Project",
     link: "https://nextjswebapp1.netlify.app/",
+    gitLink: "https://github.com/CoderSid063/Project1-Nextjs",
     img: "/HomePage.png",
     desc: "This is a Blog WebApp created using Next.js14",
   },
@@ -14,6 +15,7 @@ const items = [
     id: 2,
     title: "Amazon Clone",
     link: "https://codersid063.github.io/Amazon-Clone-Frontend-Javascript/",
+    gitLink: "https://github.com/CoderSid063/Amazon-Clone-Frontend-Javascript",
     img: "/AmazonClone.png",
     desc: "This is a Clone webApp of Amazone.in with verious functionality",
   },
@@ -21,6 +23,7 @@ const items = [
     id: 3,
     title: "MovieLand",
     link: "https://moviex-land.netlify.app/",
+    gitLink: "https://github.com/CoderSid063/MovieLand-React-WebApp",
     img: "https://images.pexels.com/photos/1200450/pexels-photo-1200450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     desc: "This WebApp show the movies according to your search and all the data catch by API call",
   },
@@ -28,6 +31,8 @@ const items = [
     id: 4,
     title: "SocialHub",
     link: "https://social-hub-post.netlify.app/",
+    gitLink:
+      "https://github.com/CoderSid063/Social-Media/tree/main/social-media",
     img: "/SocialHub.png",
     desc: "Social Hub is a dynamic and interactive web application that brings together a collection of 100 random posts sourced from a dummyJSON API and also empowers users to creating their own posts. ",
   },
@@ -56,10 +61,7 @@ const Single = ({ item }) => {
             <a href={item.link}>
               <button>See Demo</button>
             </a>
-            <a
-              href="https://github.com/CoderSid063?tab=repositories"
-              className="gitbtn"
-            >
+            <a href={item.gitLink} className="gitbtn">
               <img src="/git.png" alt="" />
               <p>Get Code</p>
             </a>
