@@ -12,11 +12,11 @@ const items = [
   },
   {
     id: 2,
-    title: "Nextjs Project",
-    link: "https://nextjswebapp1.netlify.app/",
-    gitLink: "https://github.com/CoderSid063/Project1-Nextjs",
-    img: "/HomePage.png",
-    desc: "This is a Blog WebApp created using Next.js14",
+    title: "Food-Blog",
+    link: "https://food-blog-jet.vercel.app",
+    gitLink: "https://github.com/CoderSid063/foodBlog",
+    img: "https://res.cloudinary.com/codersid063/image/upload/v1719846362/meals/amtk44u2svptcbtiinty.png",
+    desc: "This is a Food-Blog WebApp created using Next.js14,A user can share his favourite food and read others food blogs and also perform CRUD operation on that post. ",
   },
   {
     id: 3,
@@ -26,23 +26,15 @@ const items = [
     img: "/AmazonClone.png",
     desc: "This is a Clone webApp of Amazone.in with verious functionality",
   },
-  {
-    id: 4,
-    title: "MovieLand",
-    link: "https://moviex-land.netlify.app/",
-    gitLink: "https://github.com/CoderSid063/MovieLand-React-WebApp",
-    img: "https://images.pexels.com/photos/1200450/pexels-photo-1200450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "This WebApp show the movies according to your search and all the data catch by API call",
-  },
-  {
-    id: 5,
-    title: "SocialHub",
-    link: "https://social-hub-post.netlify.app/",
-    gitLink:
-      "https://github.com/CoderSid063/Social-Media/tree/main/social-media",
-    img: "/SocialHub.png",
-    desc: "Social Hub is a dynamic and interactive web application that brings together a collection of 100 random posts sourced from a dummyJSON API and also empowers users to creating their own posts. ",
-  },
+  // {
+  //   id: 4,
+  //   title: "SocialHub",
+  //   link: "https://social-hub-post.netlify.app/",
+  //   gitLink:
+  //     "https://github.com/CoderSid063/Social-Media/tree/main/social-media",
+  //   img: "/SocialHub.png",
+  //   desc: "Social Hub is a dynamic and interactive web application that brings together a collection of 100 random posts sourced from a dummyJSON API and also empowers users to creating their own posts. ",
+  // },
 ];
 
 const Single = ({ item }) => {
